@@ -14,7 +14,7 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.*/
 
 const fs = require('fs');
-if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
+if (fs.existsSync('config-env')) require('dotenv').config({ path: './config-env' });
 
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
